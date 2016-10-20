@@ -15,6 +15,7 @@ namespace PermutateSudokuV4
 
         static void Main(string[] args)
         {
+            new PermutateOneThroughNine();
             //PermutateSolutions();
         }
 
@@ -45,6 +46,7 @@ namespace PermutateSudokuV4
         private static extern bool SetConsoleCtrlHandler(EventHandler handler, bool add);
 
         public delegate bool EventHandler(CtrlType sig);
+        static EventHandler _handler;
 
         public enum CtrlType
         {
@@ -57,7 +59,7 @@ namespace PermutateSudokuV4
 
         public static void AddEvents()
         {
-            EventHandler _handler = new EventHandler(On_Close);
+            _handler += new EventHandler(On_Close);
             SetConsoleCtrlHandler(_handler, true);
         }
 
