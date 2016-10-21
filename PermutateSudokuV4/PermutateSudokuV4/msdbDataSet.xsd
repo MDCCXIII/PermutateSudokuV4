@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="msdbDataSet" targetNamespace="http://tempuri.org/msdbDataSet.xsd" xmlns:mstns="http://tempuri.org/msdbDataSet.xsd" xmlns="http://tempuri.org/msdbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="msdbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="msdbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PermutateSudokuV4.Properties.Settings.GlobalReference.Default.msdbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sysdtslog90TableAdapter" GeneratorDataComponentClassName="sysdtslog90TableAdapter" Name="sysdtslog90" UserDataComponentName="sysdtslog90TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="msdbConnectionString (Settings)" DbObjectName="msdb.dbo.sysdtslog90" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, event, computer, operator, source, sourceid, executionid, starttime, endtime, datacode, databytes, message FROM dbo.sysdtslog90</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="event" DataSetColumn="event" />
+              <Mapping SourceColumn="computer" DataSetColumn="computer" />
+              <Mapping SourceColumn="operator" DataSetColumn="operator" />
+              <Mapping SourceColumn="source" DataSetColumn="source" />
+              <Mapping SourceColumn="sourceid" DataSetColumn="sourceid" />
+              <Mapping SourceColumn="executionid" DataSetColumn="executionid" />
+              <Mapping SourceColumn="starttime" DataSetColumn="starttime" />
+              <Mapping SourceColumn="endtime" DataSetColumn="endtime" />
+              <Mapping SourceColumn="datacode" DataSetColumn="datacode" />
+              <Mapping SourceColumn="databytes" DataSetColumn="databytes" />
+              <Mapping SourceColumn="message" DataSetColumn="message" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="msdbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="msdbDataSet" msprop:Generator_UserDSName="msdbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sysdtslog90" msprop:Generator_TableClassName="sysdtslog90DataTable" msprop:Generator_TableVarName="tablesysdtslog90" msprop:Generator_TablePropName="sysdtslog90" msprop:Generator_RowDeletingName="sysdtslog90RowDeleting" msprop:Generator_RowChangingName="sysdtslog90RowChanging" msprop:Generator_RowEvHandlerName="sysdtslog90RowChangeEventHandler" msprop:Generator_RowDeletedName="sysdtslog90RowDeleted" msprop:Generator_UserTableName="sysdtslog90" msprop:Generator_RowChangedName="sysdtslog90RowChanged" msprop:Generator_RowEvArgName="sysdtslog90RowChangeEvent" msprop:Generator_RowClassName="sysdtslog90Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="event" msprop:Generator_ColumnVarNameInTable="columnevent" msprop:Generator_ColumnPropNameInRow="_event" msprop:Generator_ColumnPropNameInTable="eventColumn" msprop:Generator_UserColumnName="event">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="computer" msprop:Generator_ColumnVarNameInTable="columncomputer" msprop:Generator_ColumnPropNameInRow="computer" msprop:Generator_ColumnPropNameInTable="computerColumn" msprop:Generator_UserColumnName="computer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="operator" msprop:Generator_ColumnVarNameInTable="columnoperator" msprop:Generator_ColumnPropNameInRow="_operator" msprop:Generator_ColumnPropNameInTable="operatorColumn" msprop:Generator_UserColumnName="operator">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="source" msprop:Generator_ColumnVarNameInTable="columnsource" msprop:Generator_ColumnPropNameInRow="source" msprop:Generator_ColumnPropNameInTable="sourceColumn" msprop:Generator_UserColumnName="source">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sourceid" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnsourceid" msprop:Generator_ColumnPropNameInRow="sourceid" msprop:Generator_ColumnPropNameInTable="sourceidColumn" msprop:Generator_UserColumnName="sourceid" type="xs:string" />
+              <xs:element name="executionid" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnexecutionid" msprop:Generator_ColumnPropNameInRow="executionid" msprop:Generator_ColumnPropNameInTable="executionidColumn" msprop:Generator_UserColumnName="executionid" type="xs:string" />
+              <xs:element name="starttime" msprop:Generator_ColumnVarNameInTable="columnstarttime" msprop:Generator_ColumnPropNameInRow="starttime" msprop:Generator_ColumnPropNameInTable="starttimeColumn" msprop:Generator_UserColumnName="starttime" type="xs:dateTime" />
+              <xs:element name="endtime" msprop:Generator_ColumnVarNameInTable="columnendtime" msprop:Generator_ColumnPropNameInRow="endtime" msprop:Generator_ColumnPropNameInTable="endtimeColumn" msprop:Generator_UserColumnName="endtime" type="xs:dateTime" />
+              <xs:element name="datacode" msprop:Generator_ColumnVarNameInTable="columndatacode" msprop:Generator_ColumnPropNameInRow="datacode" msprop:Generator_ColumnPropNameInTable="datacodeColumn" msprop:Generator_UserColumnName="datacode" type="xs:int" />
+              <xs:element name="databytes" msprop:Generator_ColumnVarNameInTable="columndatabytes" msprop:Generator_ColumnPropNameInRow="databytes" msprop:Generator_ColumnPropNameInTable="databytesColumn" msprop:Generator_UserColumnName="databytes" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="message" msprop:Generator_ColumnVarNameInTable="columnmessage" msprop:Generator_ColumnPropNameInRow="message" msprop:Generator_ColumnPropNameInTable="messageColumn" msprop:Generator_UserColumnName="message">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2048" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:sysdtslog90" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

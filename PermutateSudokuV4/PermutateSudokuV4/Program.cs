@@ -15,7 +15,8 @@ namespace PermutateSudokuV4
 
         static void Main(string[] args)
         {
-            new PermutateOneThroughNine();
+            new PermutateBlocks();
+            //new PermutateOneThroughNine();
             //PermutateSolutions();
         }
 

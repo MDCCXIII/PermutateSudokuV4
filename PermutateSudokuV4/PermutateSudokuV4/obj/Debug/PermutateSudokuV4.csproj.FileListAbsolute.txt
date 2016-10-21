@@ -4,3 +4,9 @@ C:\Users\MDCCXIII\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudo
 C:\Users\MDCCXIII\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudokuV4\obj\Debug\PermutateSudokuV4.csprojResolveAssemblyReference.cache
 C:\Users\MDCCXIII\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudokuV4\obj\Debug\PermutateSudokuV4.exe
 C:\Users\MDCCXIII\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudokuV4\obj\Debug\PermutateSudokuV4.pdb
+C:\Users\tony.haynes\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudokuV4\bin\Debug\PermutateSudokuV4.exe.config
+C:\Users\tony.haynes\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudokuV4\obj\Debug\PermutateSudokuV4.exe
+C:\Users\tony.haynes\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudokuV4\obj\Debug\PermutateSudokuV4.pdb
+C:\Users\tony.haynes\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudokuV4\bin\Debug\PermutateSudokuV4.exe
+C:\Users\tony.haynes\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudokuV4\bin\Debug\PermutateSudokuV4.pdb
+C:\Users\tony.haynes\Source\Repos\PermutateSudokuV4\PermutateSudokuV4\PermutateSudokuV4\obj\Debug\PermutateSudokuV4.csprojResolveAssemblyReference.cache
