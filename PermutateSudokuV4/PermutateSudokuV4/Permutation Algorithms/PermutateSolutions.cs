@@ -13,6 +13,7 @@ namespace PermutateSudokuV4
 
         private void Permutate(int rowIndex)
         {
+            //Change this to control the permutation/validation algorithm to use.
             PermutateV1(rowIndex);
         }
 

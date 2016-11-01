@@ -16,7 +16,7 @@ namespace PermutateSudokuV4
             Stopwatch sw = new Stopwatch();
             sw.Start();
             using (SqlConnection connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings[
-                "PermutateSudokuV4.Properties.Settings.SudokuPermutationsV4ConnectionString1"].ConnectionString)) {
+                "PermutateSudokuV4.Properties.Settings.SudokuPermutationsV4ConnectionString"].ConnectionString)) {
                 connection.Open();
                 using (SqlBulkCopy bulkCopy = new SqlBulkCopy(connection)) {
                     bulkCopy.DestinationTableName = "AIPermutation";
