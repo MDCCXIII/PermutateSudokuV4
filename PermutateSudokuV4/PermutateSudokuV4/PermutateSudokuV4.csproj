@@ -46,13 +46,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO.cs" />
+    <Compile Include="Enumerations.cs" />
     <Compile Include="msdbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>msdbDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="PermutateBlocks.cs" />
-    <Compile Include="PermutateOneThroughNine.cs" />
+    <Compile Include="Permutation Algorithms\PermutateBlocks.cs" />
+    <Compile Include="Permutation Algorithms\PermutateOneThroughNine.cs" />
+    <Compile Include="Permutation Algorithms\PermutateSolutions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -60,6 +62,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="Validation Algorithms\ValidationAlgorithm0.cs" />
+    <Compile Include="Validation Algorithms\ValidationAlgorithm1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

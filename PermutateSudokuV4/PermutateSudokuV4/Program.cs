@@ -15,15 +15,16 @@ namespace PermutateSudokuV4
 
         static void Main(string[] args)
         {
-            new PermutateBlocks();
+            //new PermutateBlocks();
             //new PermutateOneThroughNine();
-            //PermutateSolutions();
+            PermutateSolutions();
         }
 
         private static void PermutateSolutions()
         {
             AddEvents();
             CheckCPUSpeed();
+            new PermutateSolutions();
             Console.ReadLine();
         }
 
@@ -73,7 +74,7 @@ namespace PermutateSudokuV4
                 case CtrlType.CTRL_LOGOFF_EVENT:
                 case CtrlType.CTRL_SHUTDOWN_EVENT:
                 default:
-                    MessageBox.Show("you are in the default close event with signature = " + sig.ToString());
+                    //MessageBox.Show("you are in the default close event with signature = " + sig.ToString());
                     break;
             }
             return true;
