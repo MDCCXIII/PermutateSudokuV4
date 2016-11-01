@@ -14,7 +14,7 @@ namespace PermutateSudokuV4
         {
 
             this.solution = solution;
-            if (ValidateBoxValues(row, rowNumber) || ValidateColumnValues(row)) {
+            if (ValidateBoxValues(row, rowNumber) && ValidateColumnValues(row)) {
                 solution[(Enumerations.RowNumber)rowNumber] = row;
                 return true;
             }
@@ -47,23 +47,23 @@ namespace PermutateSudokuV4
                 foreach (int row in rowsTocheck) {
                     if (!solution[(Enumerations.RowNumber)row].Equals("")) {
                         switch (i) {
+                            case 0:
                             case 1:
                             case 2:
-                            case 3:
                                 if (solution[(Enumerations.RowNumber)row].Substring(0, 3).Contains(rowIndices[i].ToString())) {
                                     return false;
                                 }
                                 break;
+                            case 3:
                             case 4:
                             case 5:
-                            case 6:
                                 if (solution[(Enumerations.RowNumber)row].Substring(3, 3).Contains(rowIndices[i].ToString())) {
                                     return false;
                                 }
                                 break;
+                            case 6:
                             case 7:
                             case 8:
-                            case 9:
                                 if (solution[(Enumerations.RowNumber)row].Substring(6, 3).Contains(rowIndices[i].ToString())) {
                                     return false;
                                 }
